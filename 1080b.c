@@ -36,6 +36,8 @@ int main(){
 
     printf("%d\n", maiorV);
     printf("%d\n", pos);
+
+    free(v);
     
     return 0;
 }
