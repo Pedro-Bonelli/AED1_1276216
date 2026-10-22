@@ -54,6 +54,7 @@ int main(){
 
     printf("\nRestante: %d", remansc);
 
+    free(descarte);
 }
 
 void push(int carta_ins, baralho **inicio, baralho **fim){
