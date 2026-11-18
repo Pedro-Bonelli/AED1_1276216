@@ -6,19 +6,21 @@ int busca_binaria(int v[], int tamanho, int valor){
     int meio;
 
     while(inicio <= fim){
-        meio = inicio + (fim - inicio)/2;
+        meio = (inicio + (fim - inicio))/2;
 
-        if(v[meio] == x){
+        if(v[meio] == valor){
             return meio;
         }
 
-        if(x > v[meio]){
+        if(valor > v[meio]){
             inicio = meio + 1;
         }
         else{
             fim = meio -1;
         }
     }
+
+    return -1;
 }
 
 int main(void) {

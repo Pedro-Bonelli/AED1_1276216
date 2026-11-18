@@ -61,3 +61,19 @@ void mostrar(pessoa *inicio){
         atual = atual->seg;
     }
 }
+
+void remover(pessoa **inicio, pessoa **fim){
+    if(*inicio == NULL){
+        printf("Vazia");
+        return;
+    }
+
+    pessoa *remover;
+    remover = *inicio;
+    *inicio = remover->seg;
+
+    free(remover);
+    if(*inicio == NULL){
+        *fim = NULL;
+    }
+}
