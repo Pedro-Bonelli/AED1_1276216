@@ -122,6 +122,7 @@ void liberar(aresta *cabeca){
         aux = cabeca;
         cabeca = cabeca->seg;
 
+        free(aux);
     }
 
 }
